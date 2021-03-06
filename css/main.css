@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(23, 82, 97);
+}
+#todos {
+  border: 3px solid rgb(148, 208, 231);
+  border-radius: 10px;
+  width: 100%;
+  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#todos > h1 {
+  margin: 10px 0px 0px 0px;
+  padding: 10px 20px 5px 30px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.addTodo {
+  padding: 10px 15px;
+}
+
+#todoList {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(167, 249, 255);
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#todoList > li {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+#todoList > li > input[type=checkbox], #todoList > li > label {
+  padding: 5px 10px;
+}
+
+#todoList > li > input[type=checkbox] {
+  flex: 0;
+}
+
+#todoList > li >  label {
+  flex: 10;
+}
+
+#todoList > li > input[type=text] {
+  flex: 10;
+  margin: 5px 10px;
+  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+#todoList > li > button {
+  flex: 1;
+  margin: 5px;
+}
+
+.checked > label {
+  text-decoration: line-through;
+}
+
+.addTodo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.addTodo > input[type=text] {
+  flex: 11;
+
+  border: none;
+  padding: 5px 1px;
+  margin: 0px;
+  font-size: 1em;
+  width: 80%;
+  border-bottom: 2px solid rgb(108, 113, 121);
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  transition: border linear 0.5s;
+  
+}
+
+.addTodo input[type=text]:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(114, 158, 234);
+}
+
+.addTodo > button {  
+  margin: 5px 15px;
+  flex: 1;
+  color: white;
+  background-color: skyblue;
+  border-color: skyblue;
+  border-radius: 15%;
+}
+.addTodo > button:hover {
+  color: skyblue;
+  border-color: skyblue;
+  background-color: transparent;
+  transition-duration: 0.1s;
+}
+
+
+#todoList li:nth-child(even) {
+  background-color: rgba(0, 104, 145, 0.3);
+}
+button.delete{
+  color: white;
+  background-color: red;
+  border-color: transparent;
+  border-radius: 25%;
+}
+button.delete:hover{
+  color: red;
+  background-color: white;
+  transition-duration: 0.3s;
+}
